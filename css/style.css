@@ -32,4 +32,20 @@ h1 span{
 .navbar-brand{
 	padding:5px;
 }
+.navbar-default .navbar-nav > li{
+	text-align: center;
+}
 
+.navbar-default .navbar-nav > li > a{
+	text-transform: uppercase;
+	font-weight: 400;
+	color:#83B541;
+}
+
+/*media menor a 768*/
+@media(max-width: 768px){
+	.navbar-default .navbar-nav > li:hover{
+	background:#83B541;
+	color: #fff; 
+	}
+}
