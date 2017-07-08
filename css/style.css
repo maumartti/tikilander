@@ -1,0 +1,35 @@
+@font-face {
+	font-family:'breeze';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/Breeze-Personal/Breeze.ttf');
+}
+html{
+	height: 100%;
+}
+
+body{
+	background: #FFF;
+	font-size: 14px;
+	font-weight: 300;
+}
+h1, h2, h3, h4 h5, h6{
+	font-family: 'breeze';
+	color: #000;
+}
+h1{
+	position: relative;
+	margin-top: 0;
+}
+h1 img{
+	position: absolute;
+	height: 100%;
+}
+h1 span{
+	color: #83B541;
+	margin-left: 32px;
+}
+.navbar-brand{
+	padding:5px;
+}
+
