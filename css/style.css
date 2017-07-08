@@ -29,6 +29,11 @@ h1 span{
 	color: #83B541;
 	margin-left: 32px;
 }
+
+/****navbar****/
+#nav{
+	font-size: 12px;
+}
 .navbar{
 	margin: 0px;
 }
