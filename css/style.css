@@ -127,4 +127,46 @@ ul.navbar-right {
     top:0px;
   }
 }
-	
+/*****Pestañas*****/
+.pest{
+	padding-top: 40px;
+}
+.pest.nav-tabs > li > a{
+	background: #DAE6CC;
+	color:#83B541;
+}
+.pest.nav-tabs > li.active > a{
+	background: #83B541;
+	color:#FFF;
+}
+.pest.nav-tabs .fa{
+	padding-right: 2px; 
+}
+/*******Tiki Mensajes personas*******/
+.contTikiMsj{
+	padding: 8px;
+	border: 1px solid #83B541;
+	border-radius: 7px;
+	margin: 5px 0px;
+	background: #FFF;
+}
+.contTikiImg, .contTikiTxt{
+	display: table-cell;
+}
+.contTikiImg img{
+	border-radius: 100%;
+	width: 60px;
+	height: 60px;
+}
+.contTikiTxt{
+	height: 60px;
+	vertical-align: top;
+	padding: 5px;
+}
+.contTikiTxt div{
+	display: block;
+}
+.contTikiTxt em{
+	color: #83B541;
+	font-size: 14px;
+}
