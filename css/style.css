@@ -15,9 +15,10 @@ body{
 }
 h1, h2, h3, h4 h5, h6{
 	font-family: 'breeze';
-	color: #000;
+	color: #FFF;
 }
 h1{
+	text-shadow: 2px 2px 2px #5A5A5A;
 	position: relative;
 	margin-top: 0;
 }
@@ -29,7 +30,35 @@ h1 span{
 	color: #83B541;
 	margin-left: 32px;
 }
-
+p, h3, h4{
+	font-family: Arial,Tahoma,"Bitstream Vera Sans",sans-serif;
+}
+.sup{
+	margin-top: 55px;
+	text-align: center;
+	background: url('../images/fondo1.jpg') no-repeat 100% / 100%;
+	background-position: 0% 70%;
+}
+@media(max-width: 480px){
+	.sup{
+		background: url('../images/fondo1.jpg') no-repeat 100%;
+	}
+}
+.sup > .row{
+	background: transparent url("../images/dott.png") repeat scroll 0px 0px / 2px auto;
+	padding: 20px 10px;
+	min-height: 150px;
+}
+.sup  p{
+	font-size: 28px;
+	color: #fff;
+}
+.med .lug{
+	text-align: center;
+}
+.med .lug h2{
+	color: #83B541;
+}
 /****navbar****/
 #nav{
 	font-size: 12px;
@@ -129,7 +158,7 @@ ul.navbar-right {
 }
 /*****Pestañas*****/
 .pest{
-	padding-top: 40px;
+	padding-top: 10px;
 }
 .pest.nav-tabs > li > a{
 	background: #DAE6CC;
@@ -169,4 +198,54 @@ ul.navbar-right {
 .contTikiTxt em{
 	color: #83B541;
 	font-size: 14px;
+}
+.contTikiTxt .fa{
+	padding: 4px 8px;
+	color: #83B541;
+	cursor: pointer;
+}
+.contTikiTxt .fa span{
+	margin-left: 2px;
+	  font-family: Arial, Helvetica, Verdana;
+}
+.contTikiTxt .fa-heart:hover{
+	color:red;
+}
+.contTikiTxt .fa-commenting:hover{
+	color: #ba00ff;
+}
+.contTikiTxt .fa-share:hover{
+	color:#06f;
+}
+.contTikiTxt .fa-envelope:hover{
+	color:#ffab00;
+}
+/*******Destinos*********/
+.contDestino{
+	position: relative;
+	max-height: 120px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+.contDestino img{
+	width: 100%;
+	height: 100%;
+}
+.contTxtDestino{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	cursor: pointer;
+	background: linear-gradient(10deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)) repeat scroll 0% 0%;
+}
+.contTxtDestino:hover{
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0)) repeat scroll 0% 0%;
+}
+.contTxtDestino h3{
+	position: absolute;
+	bottom: 0px;
+	margin: 5px 5px;
 }
