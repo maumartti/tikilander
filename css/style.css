@@ -171,6 +171,11 @@ ul.navbar-right {
 .pest.nav-tabs .fa{
 	padding-right: 2px; 
 }
+@media(max-width: 340px){
+	.nav > li > a{
+		padding: 10px;
+	}
+}
 /*******Tiki Mensajes personas*******/
 .contTikiMsj{
 	padding: 8px;
