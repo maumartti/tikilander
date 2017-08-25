@@ -36,18 +36,17 @@ p, h3, h4{
 .sup{
 	margin-top: 55px;
 	text-align: center;
-	background: url('../images/fondo1.jpg') no-repeat 100% / 100%;
 	background-position: 0% 70%;
 }
 @media(max-width: 480px){
 	.sup{
-		background: url('../images/fondo1.jpg') no-repeat 100%;
+		/*background: url('../images/fondo1.jpg') no-repeat 100%;*/
 	}
 }
 .sup > .row{
-	background: transparent url("../images/dott.png") repeat scroll 0px 0px / 2px auto;
 	padding: 20px 10px;
-	min-height: 150px;
+	height: auto;
+	padding: 0px;
 }
 .sup  p{
 	font-size: 28px;
@@ -100,157 +99,41 @@ ul.navbar-right {
 	background: #83B541;
 	color: #fff;
 }
-
-
-/****Slider*****/
-#presentacion{
-  height: 400px;
-}
-#slider{
-  position: relative;
-  min-height: 100%;
-}
-#slider li{
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  min-height: 100%;
-}
-#slider .cnt-img{
-  overflow: hidden;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  min-height:100%;
-}
-#slider .cnt-txt{
-  text-align: center;
-  position: absolute;
-  top: 30%;
-  margin: 0px auto;
-}
-#slider li img{
-  width: 100%;
-  height: auto;
-  min-height: 100%;
-  max-width: 100%;
-  position: absolute;
-  top: -35%;
-}
-#slider li{
-  display: none;
-}
-#slider li:first-child{
-  display: block;
-}
-#slider li p, #slider li em{
-  font-size: 3em;
-  color:#FFF;
-  margin: 10px 0px;
-  font-family: 'breeze';
-}
-@media(max-width: 992px){
-  #slider li img{
-    top:0px;
-  }
-}
-/*****Pestañas*****/
-.pest{
-	padding-top: 10px;
-}
-.pest.nav-tabs > li > a{
-	background: #DAE6CC;
-	color:#83B541;
-}
-.pest.nav-tabs > li.active > a{
-	background: #83B541;
-	color:#FFF;
-}
-.pest.nav-tabs .fa{
-	padding-right: 2px; 
-}
-@media(max-width: 340px){
-	.nav > li > a{
-		padding: 10px;
-	}
-}
-/*******Tiki Mensajes personas*******/
-.contTikiMsj{
-	padding: 8px;
+/*****tiki******/
+.tiki{
+	padding: 0px;
+	height: 105px;
+	cursor: pointer;
+	background: #fff;
+	text-align: center;
 	border: 1px solid #83B541;
-	border-radius: 7px;
-	margin: 5px 0px;
-	background: #FFF;
+	border-right: none;
 }
-.contTikiImg, .contTikiTxt{
-	display: table-cell;
+.tiki:last-child{
+	border-right: 1px solid #83B541;
 }
-.contTikiImg img{
-	border-radius: 100%;
-	width: 60px;
-	height: 60px;
+.tiki:hover{
+	background: #dfecac;
 }
-.contTikiTxt{
-	height: 60px;
-	vertical-align: top;
-	padding: 5px;
-}
-.contTikiTxt div{
-	display: block;
-}
-.contTikiTxt em{
+.tiki .fa-tree{
+	font-size: 5em;
+	margin: 12px;
 	color: #83B541;
-	font-size: 14px;
 }
-.contTikiTxt .fa{
-	padding: 4px 8px;
-	color: #83B541;
-	cursor: pointer;
+.tiki img{
+	margin: 0px;
+	width: 68px;
+	height: auto;
 }
-.contTikiTxt .fa span{
-	margin-left: 2px;
-	  font-family: Arial, Helvetica, Verdana;
+.us{
+	background-image: url('../images/mauro.jpg');
+	background-size: 100%;
 }
-.contTikiTxt .fa-heart:hover{
-	color:red;
+.us:hover{
+	background-image: url('../images/mauro.jpg');
+	background-size: 100%;
+	border: 4px solid #83B541;
 }
-.contTikiTxt .fa-commenting:hover{
-	color: #ba00ff;
-}
-.contTikiTxt .fa-share:hover{
-	color:#06f;
-}
-.contTikiTxt .fa-envelope:hover{
-	color:#ffab00;
-}
-/*******Destinos*********/
-.contDestino{
-	position: relative;
-	max-height: 120px;
-	overflow: hidden;
-	margin-bottom: 5px;
-}
-
-.contDestino img{
-	width: 100%;
-	height: 100%;
-}
-.contTxtDestino{
-	position: absolute;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	text-align: left;
-	cursor: pointer;
-	background: linear-gradient(10deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)) repeat scroll 0% 0%;
-}
-.contTxtDestino:hover{
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0)) repeat scroll 0% 0%;
-}
-.contTxtDestino h3{
-	position: absolute;
-	bottom: 0px;
-	margin: 5px 5px;
+.us > .fa{
+	display: none;
 }
